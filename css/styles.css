@@ -1,0 +1,209 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Very Dark Magenta: hsl(300, 43%, 22%)
+Soft Pink: hsl(333, 80%, 67%)
+
+### Neutral
+
+Dark Grayish Magenta: hsl(303, 10%, 53%)
+Light Grayish Magenta: hsl(300, 24%, 96%)
+White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [Spartan](https://fonts.google.com/specimen/Spartan)
+- Weights: 400, 500, 700 */
+
+:root {
+	--prim-vdk-magenta: hsl(300, 43%, 22%);
+	--prim-sft-pink: hsl(333, 80%, 67%);
+	--neut-dgy-magenta: hsl(303, 10%, 53%);
+	--neut-lgy-magenta: hsl(300, 24%, 96%);
+	--neut-white: hsl(0, 0%, 100%);
+}
+
+html {
+}
+
+body {
+	font-family: "Spartan", sans-serif;
+	background-image: url("../images/bg-pattern-top-mobile.svg"),
+		url("../images/bg-pattern-bottom-mobile.svg");
+	background-repeat: no-repeat;
+	background-position: left top, right bottom;
+	margin-top: 75px;
+	margin-bottom: 100px;
+}
+
+h1 {
+	color: var(--prim-vdk-magenta);
+	font-weight: 700;
+}
+
+h4 {
+	font-size: 15px;
+}
+
+p {
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 1.6;
+}
+
+.upper-container {
+	margin-bottom: 2rem;
+	color: var(--prim-vdk-magenta);
+}
+
+.header-container {
+	text-align: center;
+	margin: 0 auto 2rem;
+	width: 343px;
+}
+
+.ratings-container {
+	text-align: center;
+}
+
+.ratings-card {
+	background-color: var(--neut-lgy-magenta);
+	width: 327px;
+	padding: 1rem 0.5rem;
+	margin: 0.5rem auto 1rem;
+	border-radius: 0.5rem;
+	font-weight: 700;
+}
+
+.ratings-text {
+	margin: 1rem auto 0;
+}
+
+.lower-container {
+	color: var(--neut-white);
+}
+
+.review-card {
+	background-color: var(--prim-vdk-magenta);
+	width: 279px;
+	padding: 2rem;
+	margin: 0.5rem auto 1rem;
+	border-radius: 0.5rem;
+}
+
+.review-img {
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	margin-right: 1.5rem;
+}
+
+.review-title {
+	display: flex;
+	align-items: center;
+}
+
+.review-name {
+	margin: 0 auto 0.5rem;
+}
+
+.review-buyer {
+	color: var(--prim-sft-pink);
+	margin: 0 auto;
+}
+
+.review-comment {
+	margin: 2rem 0 0 0;
+	line-height: 1.6;
+}
+
+@media (min-width: 900px) {
+	body {
+		background-image: url("../images/bg-pattern-top-desktop.svg"),
+			url("../images/bg-pattern-bottom-desktop.svg");
+		height: 100vh;
+		margin-top: 200px;
+	}
+
+	.upper-container {
+		display: flex;
+		/* flex-wrap: wrap; */
+		justify-content: space-between;
+		width: 1093px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.header-container {
+		margin-left: 0;
+		margin-right: 0;
+		width: 450px;
+	}
+
+	#header-title {
+		width: 300px;
+	}
+
+	.ratings-container {
+	}
+
+	#rating-2 {
+		position: relative;
+		right: 3rem;
+	}
+
+	#rating-1 {
+		position: relative;
+		right: 6rem;
+	}
+
+	.ratings-card {
+		display: flex;
+		align-items: center;
+	}
+
+	.ratings-text {
+		margin-top: 0px;
+	}
+
+	.lower-container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 2rem;
+	}
+
+	.review-card {
+		margin-left: 0rem;
+		margin-right: 0rem;
+		position: relative;
+	}
+
+	#review-2 {
+		top: 1.5rem;
+	}
+
+	#review-3 {
+		top: 3rem;
+	}
+
+	.header-container {
+		text-align: left;
+	}
+}
